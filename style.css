@@ -1,0 +1,116 @@
+:root {
+  --bg-light: #f2f2f2;
+  --bg-dark: #111;
+  --text-dark: #111;
+  --text-light: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  overflow: hidden;
+}
+
+/* Container Locomotive */
+.container {
+  overflow: hidden;
+}
+
+/* Sections padrão */
+.section {
+  min-height: 100vh;
+  padding: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Intro */
+.intro {
+  background: #e6e1d8;
+}
+
+.intro h1 {
+  font-size: 6vw;
+  line-height: 1;
+}
+
+.intro span {
+  display: block;
+}
+
+.intro p {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+/* Section pinada */
+#sectionPin {
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+  position: relative;
+}
+
+/* Conteúdo horizontal */
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10vw;
+}
+
+.pin-wrap > * {
+  min-width: 60vw;
+  padding-right: 5vw;
+}
+
+.pin-wrap h2 {
+  font-size: 2rem;
+  max-width: 400px;
+}
+
+.pin-wrap img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Outro */
+.outro {
+  background: #e3857a;
+  flex-direction: column;
+  text-align: center;
+}
+
+.outro img {
+  width: 300px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.credit a {
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 12vw;
+  }
+
+  .pin-wrap > * {
+    min-width: 80vw;
+  }
+}
